@@ -170,6 +170,10 @@ footer{
   flex-wrap: nowrap;
 }
 
+footer a{
+  color: white;
+}
+
 /* LEFT */
 footer .left{
   width: 230px;
@@ -190,12 +194,15 @@ footer .text{
   justify-content: center;
 }
 
-footer .text h3{
-  font-size: 0.8rem;
+footer .text a{
+  font-size: 0.7rem;
+  font-weight: bold;
 }
 
-footer .text h4{
+footer .text a:last-child{
+  color: #7d7f84;
   font-size: 0.6rem;
+  font-weight: bold;
 }
 
 footer .favorite i{
@@ -215,10 +222,22 @@ footer .media-controller{
   padding-top:10px ;
 }
 
-footer .ico i{
-  padding:0 10px;
+footer .ico span i:first-child{
+  padding:0;
+  font-size: 1.7rem;
+  line-height: 30px;
+  text-align: center;
 }
 
+footer .ico span i:last-child{
+  letter-spacing: -2px;
+
+}
+
+footer .ico i{
+  padding:0 10px;
+
+}
 
 footer .bar{
   padding-top: 15px ;
