@@ -96,10 +96,25 @@ img{
 }
 
 /* BUTTON */
-.btn{
-  
+
+
+/* HEADER */
+.button{
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+  padding-right: 20px;
 }
 
+.button a{
+  color: white;
+  border: 1px solid white;
+  border-radius: 20px;
+  padding: 10px 30px;
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
 
 
 /* MAIN */
