@@ -366,7 +366,6 @@ section h4{
 
 
 /* MAIN */
-
 /* NAV-MAIN */
 #nav-main li{
   padding: 0 10px;
@@ -386,25 +385,17 @@ section h4{
 }
 
 /* RECETRLY-PLAYED */
-#recently-played>a{
-  font-size: 1.7rem;
-}
-
-/* DAILYMIX */
-#daily-mix>a{
-  font-size: 1.7rem;
-}
-
-/* SECTION ARTIST */
+#recently-played>a,
+#daily-mix>a,
 #artist>a{
   font-size: 1.7rem;
 }
 
+/* ARTIST */
 #artist .cover img{
   border-radius: 100%;
   padding-bottom: 10px;
 }
-
 
 /* FOOTER */
 footer{
