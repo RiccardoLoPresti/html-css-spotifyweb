@@ -202,9 +202,6 @@ section h4{
   overflow: auto;
 }
 
-.footer-aside{
-}
-
 .logo-big a img{
   width: 130px;
   filter: invert(0);
@@ -275,8 +272,6 @@ section h4{
   padding-left: 10px;
 }
 
-
-
 .footer-aside .profile a i,
 .footer-aside .profile a span{
   font-size: 1rem;
@@ -298,12 +293,6 @@ section h4{
   font-size: 0.9rem;
   padding-left: 10px;
 }
-
-
-
-
-
-
 
 
 /* MAIN */
@@ -487,6 +476,15 @@ footer .right .audio-bar-over{
     width: 50px;
   }
 
+  .wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: calc(100% - 40px);
+  }
+
   .logo-big{
     display: none;
   }
@@ -499,6 +497,26 @@ footer .right .audio-bar-over{
   .logo-small img{
     width: 30px;
     filter: invert(0);
+  }
+
+  .home a span,
+  .search  a span,
+  .library a span,
+  .add,
+  .playlist,
+  .download span,
+  .line,
+  .profile span{
+    display: none;
+  }
+
+  .download{
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .profile{
+    margin-bottom: 10px;
   }
 
   main{
