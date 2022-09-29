@@ -44,10 +44,6 @@ section a{
   color: white;
 }
 
-h3{
-font-size: 1rem;
-}
-
 h4{
   color: #7d7f84;
 }
@@ -158,6 +154,21 @@ section h4{
   width: 180px;
   background-color: #7d7f84;
   margin: 15px 0;
+}
+
+.active{
+  background-image: linear-gradient(#adff2f 0 0);
+  background-position: bottom 15px center;
+  background-size: 30px 2px;
+  background-repeat: no-repeat;
+}
+
+.active-left{
+
+}
+
+.active-left::before{
+  border-left: 4px solid greenyellow;
 }
 
 .d-flex{
