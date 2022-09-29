@@ -62,6 +62,7 @@ a{
 
 img{
   max-width: 100%;
+  max-height: 100%;
 }
 
 aside a,
@@ -86,7 +87,9 @@ section a{
   font-size: 1.45rem;
 }
 
-section a:hover{
+section a:hover,
+#recently-played h4:hover,
+footer a:hover{
   text-decoration: underline;
 }
 
@@ -111,7 +114,40 @@ section h4{
   font-size: 1rem;
 }
 
+.overlay{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  /* display: none; */
+  background-color: #0000008f;
+}
 
+.overlay i{
+  font-size: 2.5rem;
+  letter-spacing: -8px;
+}
+
+.overlay a{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+  display: inline-block;
+  border: 7px solid white;
+  border-radius: 100%;
+  width: 65px;
+  height: 65px;
+  line-height:70px;
+  display: none;
+}
+
+.box:hover .overlay, .overlay a{
+ display: inline-block;
+}
 /* UTILITES */
 .debug{
   background-color: rgb(23, 0, 49);
@@ -131,6 +167,10 @@ section h4{
 
 .f-wrap{
   flex-wrap: wrap;
+}
+
+.p-relative{
+  position: relative;
 }
 
 .j-c-c{
@@ -407,6 +447,10 @@ footer .favorite i{
   padding-left: 10px;
 }
 
+footer .favorite i:hover{
+  color: white;
+}
+
 /* MID */
 footer .mid{
   flex-direction: column;
@@ -416,24 +460,32 @@ footer .mid{
 }
 
 footer .media-controller{
-  padding-top:10px ;
+  padding-top:15px ;
 }
 
-footer .ico span i:first-child{
-  padding:0;
-  font-size: 1.7rem;
-  line-height: 30px;
-  text-align: center;
+footer .ico a{
+  font-size: 1rem;
 }
 
-footer .ico span i:last-child{
-  letter-spacing: -2px;
-
+footer .ico a:nth-child(3){
+  display: inline-block;
+  border: 3px solid white;
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+  line-height: 25px;
 }
 
-footer .ico i{
+footer .ico a:nth-child(3):hover{
+  scale: 1.1;
+}
+
+footer .ico a{
   padding:0 10px;
+}
 
+footer .ico a:nth-child(3)>i{
+  margin-left: -3px;
 }
 
 footer .bar{
