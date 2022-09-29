@@ -70,6 +70,10 @@ aside i{
   font-weight: bold;
 }
 
+aside a:hover{
+  color: white;
+}
+
 aside i{
   font-size: 1.5rem;
 }
@@ -78,8 +82,12 @@ section a{
   font-weight: bold;
 }
 
-section a{
-  font-size: 1.7rem;
+.nav-aside span::before{
+  font-size: 1.45rem;
+}
+
+section a:hover{
+  text-decoration: underline;
 }
 
 section h4{
@@ -171,6 +179,10 @@ section h4{
   font-weight: bold;
 }
 
+.button a:hover{
+  scale: 1.1;
+}
+
 /* BAR */
 .audio-bar,
 .audio-bar-over{
@@ -223,8 +235,23 @@ section h4{
   font-size: 0.9rem;
 }
 
-.nav-aside .library i{
+.nav-aside .home span::before{
+  font-family: fontawesome;
+  content: '\f015';
+  font-weight:lighter;
+}
+
+.nav-aside .search span::before{
+  font-family: fontawesome;
+  content: '\f002';
+  font-weight:lighter;
+}
+
+.nav-aside .library span::before{
+  font-family: fontawesome;
+  content: '\e51e';
   transform: scaleX(-1);
+  font-weight:lighter;
 }
 
 .add a:first-child{
@@ -234,8 +261,15 @@ section h4{
   padding-bottom:30px ;
 }
 
-.add i{
+.add a:first-child:hover{
+  text-decoration: underline;
+}
+
+.add span::before{
+  font-family: fontawesome;
+  content: '\f0fe';
   font-size: 3rem;
+  margin-right: 10px;
   vertical-align: middle;
 }
 
@@ -258,15 +292,10 @@ section h4{
   padding-left: 5px;
 }
 
-.footer-aside .download a:first-child{
-  border: 1px solid #7d7f84;
-  border-radius: 50%;
-  height: 12px;
-  width: 12px;
-  display: inline-block;
-  text-align: center;
-  line-height:5px;
-  vertical-align: middle;
+.footer-aside .download span:before{
+  font-family: fontawesome;
+  content: '\f358';
+  margin-right: 10px;
 }
 
 .footer-aside .download a i{
@@ -316,6 +345,14 @@ section h4{
   padding: 20px 0px;
   display: inline-block;
 }
+
+#nav-main li a:hover{
+  color: white;
+}
+
+/* RECETRLY-PLAYED */
+#recently-played
+
 
 /* SECTION ARTIST */
 #artist .box img{
