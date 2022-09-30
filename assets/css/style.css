@@ -314,6 +314,10 @@ section h4{
   font-size: 0.875rem;
 }
 
+.list li a:hover{
+  color: white;
+}
+
 /* ASIDE FOOTER */
 .footer-aside{
   padding-top: 10px;
