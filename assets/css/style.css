@@ -95,6 +95,10 @@ section h4{
   flex-direction: column;
 }
 
+.box a{
+  padding-top: 10px;
+}
+
 .overlay{
   position: absolute;
   top: 0;
@@ -104,7 +108,7 @@ section h4{
   height: 98.7%;
   max-width: 100%;
   display: none;
-  background-color:rgba(0, 0, 0, 0.253);
+  background-color:rgba(0, 0, 0, 0.411)
 }
 
 .overlay-round{
@@ -133,7 +137,6 @@ section h4{
 .box:hover .overlay, .overlay a{
  display: inline-block;
 }
-
 
 /* UTILITES */
 .debug{
@@ -392,7 +395,6 @@ section h4{
 /* ARTIST */
 #artist .cover img{
   border-radius: 100%;
-  padding-bottom: 10px;
 }
 
 /* FOOTER */
@@ -553,6 +555,12 @@ footer .right .audio-bar i{
 /*******************/
 /****** MEDIA ******/
 /*******************/
+
+@media (min-width:2160px){
+  .box{
+  width: calc(100% / 8 - 15px);
+  }
+}
 
 @media (max-width:878px){
   .box{
