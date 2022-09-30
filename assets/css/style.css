@@ -157,7 +157,6 @@ section h4{
   background-repeat: no-repeat;
 }
 
-/* DA SISTEMARE */
 .active-left{
   background-image: linear-gradient(#afff2f 0 0);
   padding-left: 20px;
@@ -229,13 +228,13 @@ section h4{
 
 /* AUDIO BAR */
 .audio-bar,
-.audio-bar-over{
+.audio-bar-short{
   height: 3px;
   background-color: #5a5a5a;
   border-radius: 10px;
 }
 
-.audio-bar-over{
+.audio-bar-short{
   background-color: #7d7f84;
 }
 
@@ -494,26 +493,24 @@ footer .mid .audio-bar{
   margin: 4px 10px;
 }
 
-footer .mid .audio-bar-over{
-  position: absolute;
-  width: 25%;
-  left:27px;
-  top:19px;
+footer .audio-bar .audio-bar-short{
+  width: 30%;
 }
 
-footer .mid .audio-bar-over i{
+footer .audio-bar i{
   position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%,-50%);
   font-size: 0.8rem;
-  left:94%;
-  top:-5px;
   display: none;
 }
 
-footer .bar:hover .audio-bar-over{
+footer .bar:hover .audio-bar-short{
   background-color: #adff2f;
 }
 
-footer .bar:hover .audio-bar-over i{
+footer .bar:hover .audio-bar i{
   display: block;
 }
 
@@ -528,32 +525,25 @@ footer .volume i{
   padding: 0 10px;
 }
 
+footer .right .bar{
+ padding-top: 5px;
+}
+
 footer .right .audio-bar{
   width: 100px;
 }
 
-footer .right .audio-bar-over i{
+footer .right .audio-bar .audio-bar-short{
+  width: 50%;
+}
+
+footer .right .audio-bar i{
   position: absolute;
-  left:78%;
-  top:-4px;
-  font-size:0.8rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 0.8rem;
   display: none;
-}
-
-footer .right .audio-bar-over{
-  position: absolute;
-  left:98px;
-  top:44px;
-  width: 10%;
-}
-
-footer .right .bar-volume:hover .audio-bar-over
-{
-  background-color: #adff2f;
-}
-
-footer .right .bar-volume:hover .audio-bar-over i{
-  display:block;
 }
 
 /*******************/
