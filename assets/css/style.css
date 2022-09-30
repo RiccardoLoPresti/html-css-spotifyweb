@@ -611,8 +611,8 @@ footer .right .audio-bar-over{
     padding-left: 0px;
   }
 
-  .footer-aside .download a i{
-    font-size: 0.8rem;  
+  .footer-aside .download a{
+    padding-left: 0px;
   }
 
   .nav-aside,
